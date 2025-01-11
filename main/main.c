@@ -356,7 +356,7 @@ static void esp_zb_task(void *pvParameters)
         .manuf_code = ESP_ZB_ZCL_ATTR_NON_MANUFACTURER_SPECIFIC,
     };
 
-    ESP_ERROR_CHECK(esp_zb_zcl_update_reporting_info(&ai_reporting_info));
+   ESP_ERROR_CHECK(esp_zb_zcl_update_reporting_info(&ai_reporting_info));
 
     esp_zb_zcl_reporting_info_t hb_reporting_info = {
         .direction = ESP_ZB_ZCL_CMD_DIRECTION_TO_SRV,
